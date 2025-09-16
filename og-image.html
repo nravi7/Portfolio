@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Preview</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 1200px;
+            height: 630px;
+            background: linear-gradient(135deg, #1d1836 0%, #2a1f4a 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Arial', sans-serif;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .container {
+            text-align: center;
+            z-index: 2;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 60px 80px;
+            border-radius: 20px;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+        }
+        
+        .name {
+            font-size: 72px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            background: linear-gradient(45deg, #fff, #66f6ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .title {
+            font-size: 36px;
+            margin-bottom: 30px;
+            color: #ffffff;
+        }
+        
+        .description {
+            font-size: 24px;
+            color: #cccccc;
+            margin-bottom: 20px;
+            line-height: 1.4;
+        }
+        
+        .tech-stack {
+            font-size: 20px;
+            color: #66f6ff;
+            margin-bottom: 30px;
+        }
+        
+        .url {
+            font-size: 18px;
+            color: #66f6ff;
+            font-weight: bold;
+        }
+        
+        .background-pattern {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.1;
+            background-image: 
+                radial-gradient(circle at 20% 20%, #66f6ff 2px, transparent 2px),
+                radial-gradient(circle at 80% 80%, #66f6ff 2px, transparent 2px),
+                radial-gradient(circle at 40% 60%, #66f6ff 1px, transparent 1px);
+            background-size: 100px 100px, 150px 150px, 80px 80px;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-pattern"></div>
+    <div class="container">
+        <div class="name">Ravi</div>
+        <div class="title">Java Full Stack Developer & AI Specialist</div>
+        <div class="description">Building scalable, intelligent systems with</div>
+        <div class="tech-stack">Java • Spring Boot • React • AI • LLMs • RAG</div>
+        <div class="url">nravi7.github.io/Portfolio</div>
+    </div>
+</body>
+</html>
